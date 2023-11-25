@@ -81,3 +81,10 @@ const reFactor_setPriceByName = (cart, name, price) => {
   if (i !== null) return arraySet(cart, i, setPrice(cart[i], price));
   return cart;
 };
+
+// 215
+const getWatchDiscount = (cart) => {
+  var total = calcTotal(cart);
+  var hasWatch = isInCart("watch");
+  return total > 100 && hasWatch;
+};
