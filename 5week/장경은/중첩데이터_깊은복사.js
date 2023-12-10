@@ -43,7 +43,7 @@ const increment = value => {
     return newValue;
 };
 
-const keys = ['fronted', 'framework', 'vue'];
+const keys = ['frontend', 'framework', 'vue'];
 
 const updatedObject = nestedUpdate(developer, keys, increment);
 
